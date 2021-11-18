@@ -14,14 +14,14 @@
     <framework targetVersion="4.8" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="Application Files\SctCADClient_1_0_1118_1\SctCADClient.exe.manifest" size="31863">
+    <dependentAssembly dependencyType="install" codebase="Application Files\SctCADClient_1_0_1118_1\SctCADClient.exe.manifest" size="23234">
       <assemblyIdentity name="SctCADClient.exe" version="1.0.1118.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>igKXcCPaWF4LNysP7TNyCnL3v3o7Xs9ZvKbwlzHRPbY=</dsig:DigestValue>
+        <dsig:DigestValue>xD6oJ5gM06HsMrJSGT4pbn6wezAeE5ibPkuho4iHDt4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

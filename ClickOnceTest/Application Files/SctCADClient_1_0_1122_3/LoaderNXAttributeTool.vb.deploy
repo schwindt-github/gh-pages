@@ -1,0 +1,34 @@
+﻿
+Option Strict Off
+
+Imports System
+Imports System.Windows
+Imports System.Reflection
+Imports System.Diagnostics
+Imports NXOpen
+Imports System.Threading
+
+
+Module Example
+	'Use this file in NX to load the application
+	Public Class Loader
+		Shared Sub start()
+
+			[Assembly].UnsafeLoadFrom("D:\UGS\TestWPF\MahApps.Metro.IconPacks.Material.dll")
+			[Assembly].UnsafeLoadFrom("D:\UGS\TestWPF\MahApps.Metro.IconPacks.FontAwesome.dll")
+			Dim ass As [Assembly] = [Assembly].UnsafeLoadFrom("D:\UGS\TestWPF\SctCADClient.exe")
+			Dim ty As Type = ass.GetType("SctCADClient.App")
+			If (ty Is Nothing) Then
+				MsgBox("SctCADClient.App is null")
+			Else
+				Dim p() As Object = {}
+				ty.GetMethod("StartAttributeTool").Invoke(Nothing, p)
+			End If
+
+		End Sub
+	End Class
+
+	Sub Main()
+		Loader.start()
+	End Sub
+End Module

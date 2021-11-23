@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Global>
+  <Config CadInterface="V5" Mode="AttributeTool" Server="local_ipu">
+    <Servers>
+      <Server Name="azure" ClientId="539209cf-a237-4b8c-b327-2f30bca1181a" TenantId="d797af7c-b8f0-4a27-9c34-b60329ec6410" Scope="https://schwindt4s.onmicrosoft.com/api/User" ServerUrl="https://sct-deve-pub-oswintest-0.azurewebsites.net/api/lara/v1/" Tenant="demo" />
+      <Server Name="local" ClientId="539209cf-a237-4b8c-b327-2f30bca1181a" TenantId="d797af7c-b8f0-4a27-9c34-b60329ec6410" Scope="https://schwindt4s.onmicrosoft.com/api/User" ServerUrl="https://lara.localhost/api/lara/v1/" Tenant="demo" />
+      <Server Name="local_ipu_old" ClientId="539209cf-a237-4b8c-b327-2f30bca1181a" TenantId="d797af7c-b8f0-4a27-9c34-b60329ec6410" Scope="https://schwindt4s.onmicrosoft.com/api/User" ServerUrl="https://localhost/api/lara/v1/" Tenant="demo" />
+      <Server Name="local_ipu" ClientId="539209cf-a237-4b8c-b327-2f30bca1181a" TenantId="d797af7c-b8f0-4a27-9c34-b60329ec6410" Scope="https://schwindt4s.onmicrosoft.com/api/User" ServerUrl="https://localhost/v1/" Tenant="demo" />
+    </Servers>
+    <DsCloud Setting="sct">
+      <Settings>
+        <Setting Setting="sct">
+					find place for password
+				</Setting>
+      </Settings>
+    </DsCloud>
+  </Config>
+  <Convert UploadSourceFiles="true" Pictures="true" MiniPictures="true" OutputFileNameFormat="{NAME}" OutputFileNameFormat_example="{TYPE}_{NAME}_{REVISION}">
+    <Format Format="glb" />
+    <Format Format="3dxml" />
+    <Format Format="stp" />
+    <Format Format="cgr" />
+  </Convert>
+  <Processes>
+    <Process ProcessType="Unit" Comment="Wenn die Kinder des Objektes auf der BOM nicht erscheinen sollen">
+      <Criterion MatchType="Prefix" Value="01"></Criterion>
+    </Process>
+    <Process ProcessType="Phantom" Comment="Wenn nur die Kinder des Objektes auf der BOM erscheinen sollen, ohne Eltern-Element">
+      <Criterion MatchType="Prefix" Value="1000-004--"></Criterion>
+    </Process>
+    <Process ProcessType="NoBOM" Comment="Wenn Objekt komplett auf der BOM nicht erscheinen soll">
+      <Criterion MatchType="Suffix" Value="1000-010--"></Criterion>
+    </Process>
+    <Process ProcessType="Default" Comment="Objekt erscheint auf der BOM mit Kindern">
+      <Criterion MatchType="Contains" Value="dummy"></Criterion>
+    </Process>
+  </Processes>
+  <CadToBom></CadToBom>
+  <CAD2BOM>
+		1. NoBOM - Teil nicht auflisten - ignore
+		3. Phantom - Baugruppe ist nur ein Platzhalter. Baugruppe ignorieren aber Kinder auflisten. Bei relations eine Ebene höher hängen
+		4. Unit (Kaufteil) - Baugruppe als Teil betrachten (Kinder/Teile weglassen)
+		5. defatul (CAD = ENG)
+		6. Exemplare zusammenfassen (erledigt)
+		(in DB) NonCAD-Parts: Schmierstoffe, Verpackung, Aufdruck, Software
+
+		CollectCount = true/false
+		2. Abweichende Menge - ManCount
+	</CAD2BOM>
+  <Properties DsCloud="true" LocalAttributesKey="AttributeCache" strBlockBackColor="f7e7c6">
+    <Blocks>
+      <Block Header="DS Common Attributes" CATBasic="true">
+        <Fields>
+          <!-- <Field Control="TextBox" Display="Instance name" AttributeName="Name" Disabled="false" Write="false" Color="ffe5c2"/> -->
+          <Field Control="TextBox" Display="PartNumber" AttributeName="PartNumber" Disabled="false" Write="false" MandatoryField="true">
+            <MandatoryConditions>
+              <Condition MaxLength="29" />
+              <Condition FixLength="29" />
+            </MandatoryConditions>
+          </Field>
+          <!-- <Field Control="ComboBox" Display="Source" AttributeName="Source" Disabled="false" Write="false">
+						<Values>
+							<Value Value="0" Display="Unknown"/>
+							<Value Value="1" Display="Made"/>
+							<Value Value="2" Display="Bought"/>
+						</Values>
+					</Field>
+					<Field Control="TextBox" Display="DescriptionInst" AttributeName="DescriptionInst" Multiline="true" Disabled="false" Write="false" Color="fff7d0"/> -->
+          <Field Control="ComboBox" Display="FSF_Dok_Typ" AttributeName="FSF_Dok_Typ" Disabled="false" EnterpriseAttr="true">
+            <Values>
+              <Value Value="LU - Lieferumfang" Display="LU - Lieferumfang" />
+              <Value Value="BS - Beistellteil" Display="BS - Beistellteil"></Value>
+              <Value Value="PK - Peripherieteil" Display="PK - Peripherieteil" />
+              <Value Value="PE - Peripherieteil" Display="PE - Peripherieteil" />
+              <Value Value="_ - Default" Display="_ - Default"></Value>
+            </Values>
+          </Field>
+          <Field Control="TextBox" Display="FSF_F_Typ" AttributeName="FSF_F_Typ" EnterpriseAttr="true"></Field>
+          <Field Control="TextBox" Display="FSF_GA" AttributeName="FSF_GA" EnterpriseAttr="true"></Field>
+          <Field Control="TextBox" Display="FSF_Quick_Info" AttributeName="FSF_Quick_Info" EnterpriseAttr="true"></Field>
+        </Fields>
+      </Block>
+    </Blocks>
+    <Users BaseUrl="https://r1132100215941-eu1-space.3dexperience.3ds.com/enovia">
+      <User UserDisplayName="Alex Gent" UserName="b985c568-7560-4064-a7de-840c344541b0" UserPass="o0ZXx}K:xn$[ieXpqCxpHv'X" UserContext="VPLMProjectLeader.Company Name.EIF-Test"></User>
+    </Users>
+  </Properties>
+  <Ribbon>
+    <RibbonTabs>
+      <RibbonTab Header="Home" KeyTip="H">
+        <RibbonGroups>
+          <RibbonGroup Header="Home">
+            <RibbonMenuButton LargeImageSource="{iconPacks:MaterialImage Kind=EmoticonCool}" Label="Paste" KeyTip="V">
+              <RibbonMenuItem ImageSource="Images\book.png" Header="Keep Text Only" KeyTip="T" />
+              <RibbonMenuItem ImageSource="Images\book.png" Header="Paste Special..." KeyTip="S" />
+            </RibbonMenuButton>
+            <RibbonButton SmallImageSource="Images\book.png" Label="Copy" KeyTip="C" />
+            <RibbonComboBox>
+              <RibbonGallery SelectedValue="Item 1" SelectedValuePath="Content" MaxColumnCount="1">
+                <RibbonGalleryItem Content="Item 1" IsSelected="True" />
+                <RibbonGalleryItem Content="Item 2" />
+              </RibbonGallery>
+            </RibbonComboBox>
+          </RibbonGroup>
+        </RibbonGroups>
+      </RibbonTab>
+    </RibbonTabs>
+  </Ribbon>
+  <MenuBar>
+    <Items>
+      <MenuItem Icon="book" Text="File">
+        <Items>
+          <MenuItem Text="Open" />
+          <MenuItem Icon="label" Text="Close" />
+          <MenuItem Icon="save" Text="Save" />
+        </Items>
+      </MenuItem>
+      <MenuItem Icon="book" Text="Edit">
+        <Items>
+          <MenuItem Icon="label" Text="Undo" />
+          <MenuItem Icon="save" Text="Redo" />
+          <MenuItem Text="Do be do be do" />
+        </Items>
+      </MenuItem>
+      <!-- <MenuItem Icon="refresh" Text="Refresh" ClickEvent="Refresh"/> -->
+    </Items>
+  </MenuBar>
+  <Archive>
+    <Block Background="f7e7c6" Background_="eee" Header="Catia attributes">
+      <Fields>
+        <!-- <Field Control="TextBox" Display="Instance name" AttributeName="Name" Disabled="false" Write="false" Color="ffe5c2"/> -->
+        <Field Control="TextBox" Display="PartNumber" AttributeName="PartNumber" Disabled="false" Write="false" Color="acdcea" MandatoryField="true">
+          <MandatoryConditions>
+            <Condition MaxLength="29" />
+            <Condition FixLength="29" />
+          </MandatoryConditions>
+        </Field>
+        <Field Control="TextBox" Display="Revision" AttributeName="Revision" Disabled="false" Write="false" Color="dcdcdc" />
+        <Field Control="TextBox" Display="Definition" AttributeName="Definition" Disabled="false" Write="false" Color="afdbe8" />
+        <Field Control="TextBox" Display="Nomenclature" AttributeName="Nomenclature" Disabled="false" Write="false" Color="93ec98" />
+        <!-- <Field Control="ComboBox" Display="Source" AttributeName="Source" Disabled="false" Write="false">
+						<Values>
+							<Value Value="0" Display="Unknown"/>
+							<Value Value="1" Display="Made"/>
+							<Value Value="2" Display="Bought"/>
+						</Values>
+					</Field>
+					<Field Control="TextBox" Display="DescriptionInst" AttributeName="DescriptionInst" Multiline="true" Disabled="false" Write="false" Color="fff7d0"/> -->
+        <Field Control="TextBox" Display="Description" AttributeName="DescriptionRef" Multiline="true" Disabled="false" Write="false" Color="f4e08a" />
+      </Fields>
+    </Block>
+    <Block Background="acdbfb" Background_="30a5f5" CloudMatching="false" CloudAttributesKey="dseno:EnterpriseAttributes" LocalAttributesKey="AttributeCache" Header="Enterprise attributes">
+      <Fields>
+        <Field Control="TextBox" Display="Wizard" AttributeName="Wizard" />
+        <Field Control="TextBox" Display="Supplier" AttributeName="Supplier" />
+        <Field Control="TextBox" Display="sct_description" AttributeName="sct_description" />
+        <Field Control="TextBox" Display="IsPhantom" AttributeName="IsPhantom" />
+        <Field Control="TextBox" Display="Teilegewicht" AttributeName="Teilegewicht" />
+        <Field Control="TextBox" Display="automatisch" AttributeName="automatisch" />
+        <Field Control="TextBox" Display="Zukaufteil" AttributeName="Zukaufteil" />
+        <Field Control="TextBox" Display="Bohrungsart" AttributeName="Bohrungsart" />
+        <Field Control="TextBox" Display="EBOM_Item" AttributeName="EBOM_Item" />
+        <Field Control="TextBox" Display="CATIA_Release" AttributeName="CATIA_Release" />
+        <Field Control="TextBox" Display="drop" AttributeName="drop" />
+        <Field Control="TextBox" Display="CATIA_Volume" AttributeName="CATIA_Volume" />
+      </Fields>
+    </Block>
+    <Block Background="c6d0fc" Background_="DEE4FD" Comment="3dx basics">
+      <Fields>
+        <Field Control="TextBox" Display="name" AttributeName="name" Disabled="false" Write="false" Color="acdcea" />
+        <Field Control="TextBox" Display="title" AttributeName="title" Disabled="false" Write="false" Color="acdcea" />
+        <Field Control="TextBox" Display="description" AttributeName="description" Disabled="false" Write="false" Color="acdcea" />
+        <Field Control="TextBox" Display="id" AttributeName="id" Disabled="false" Write="false" Color="acdcea" />
+        <Field Control="TextBox" Display="type" AttributeName="type" Disabled="false" Write="false" Color="acdcea" />
+        <Field Control="TextBox" Display="modified" AttributeName="modified" Disabled="false" Write="false" Color="acdcea" />
+        <Field Control="TextBox" Display="created" AttributeName="created" Disabled="false" Write="false" Color="acdcea" />
+        <Field Control="TextBox" Display="revision" AttributeName="revision" Disabled="false" Write="false" Color="acdcea" />
+        <Field Control="TextBox" Display="state" AttributeName="state" Disabled="false" Write="false" Color="acdcea" />
+        <Field Control="TextBox" Display="owner" AttributeName="owner" Disabled="false" Write="false" Color="acdcea" />
+        <Field Control="TextBox" Display="organization" AttributeName="organization" Disabled="false" Write="false" Color="acdcea" />
+        <Field Control="TextBox" Display="collabspace" AttributeName="collabspace" Disabled="false" Write="false" Color="acdcea" />
+      </Fields>
+    </Block>
+    <Block Classification="true" ClassificationId="BCE5D9A4396D000061273F18000AC9CE" ClassificationName="Class-sct-00000041" Header="Baugruppe">
+      <Fields>
+        <Field Control="TextBox" Display="Produktbezeichnung" AttributeName="Produktbezeichnung" />
+      </Fields>
+    </Block>
+    <Block Classification="true" ClassificationId="BCE5D9A4396D000061273F660013CAAC" ClassificationName="Class-sct-00000042" Header="Beistellteil">
+      <Fields>
+        <Field Control="TextBox" Display="Lieferant" AttributeName="Lieferant" />
+        <Field Control="TextBox" Display="Lieferantennummer" AttributeName="Lieferantennummer" />
+      </Fields>
+    </Block>
+    <Block Classification="true" ClassificationId="BCE5D9A4396D000061273F9A001403C4" ClassificationName="Class-sct-00000043" Header="Lieferumfang">
+      <Fields>
+        <Field Control="Button" ButtonDisplay="New number" Function="NewNumber" AttributeName="Rohteilnummer" />
+        <Field Control="TextBox" Display="Rohteilnummer" AttributeName="Rohteilnummer" />
+        <Field Control="TextBox" Display="Werk" AttributeName="Werk" />
+      </Fields>
+    </Block>
+    <Block Classification="true" ClassificationId="BCE5D9A4396D000061273F660013CAAC" ClassificationName="Class-sct-00000042" Header="Beistellteil">
+      <Blocks>
+        <Block Classification="true" ClassificationId="2ED94151AC110000615E9571000155A0" ClassificationName="Class-sct-01" Header="Eigenfertigung">
+          <Fields>
+            <Field Control="TextBox" Display="Lieferant" AttributeName="Lieferant"></Field>
+            <Field Control="TextBox" Display="Lieferantennumber" AttributeName="Lieferantennumber" />
+          </Fields>
+        </Block>
+        <Block Classification="true" ClassificationId="2ED94151AC110000615E959C001C85BE" ClassificationName="Class-sct-00000096" Header="Zukaufteil">
+          <Fields>
+            <Field Control="TextBox" Display="Lieferant" AttributeName="Lieferant"></Field>
+            <Field Control="TextBox" Display="Lieferantennumber" AttributeName="Lieferantennumber" />
+          </Fields>
+        </Block>
+      </Blocks>
+    </Block>
+    <Block Classification="true" ClassificationId="BCE5D9A4396D000061273F18000AC9CE" ClassificationName="Class-sct-00000041" Header="Baugruppe">
+      <Fields>
+        <Field Control="TextBox" Display="Produktbezeichnung" AttributeName="Produktbezeichnung" />
+      </Fields>
+    </Block>
+  </Archive>
+</Global>

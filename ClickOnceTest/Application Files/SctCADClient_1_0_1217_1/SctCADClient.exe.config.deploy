@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <configSections>
+        <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+            <section name="SctCADClient.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false" />
+        </sectionGroup>
+    </configSections>
+    <startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.8"/>
+    </startup>
+    <userSettings>
+        <SctCADClient.Properties.Settings>
+            <setting name="username" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="userpass" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="baseurl" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="context" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="UserSettingsUpgradeNeeded" serializeAs="String">
+                <value>True</value>
+            </setting>
+            <setting name="displayName" serializeAs="String">
+                <value />
+            </setting>
+        </SctCADClient.Properties.Settings>
+    </userSettings>
+</configuration>

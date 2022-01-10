@@ -68,14 +68,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GenCADNumber.dll" size="48640">
-      <assemblyIdentity name="GenCADNumber" version="1.0.0.1" language="neutral" processorArchitecture="amd64" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GenCADNumber.dll" size="46080">
+      <assemblyIdentity name="GenCADNumber" version="1.0.0.1" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>G+wxJAaPJ9jNlQnl3Ehh4cZ0/KvAOZiqPKCrbxNvWEE=</dsig:DigestValue>
+        <dsig:DigestValue>sED7LHM8odbSx5jky+HVwtxSh43A4TFjTyEOtrRL4BE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -284,86 +284,86 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Sct3DXCloudConnector.dll" size="15872">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Sct3DXCloudConnector.dll" size="14848">
       <assemblyIdentity name="Sct3DXCloudConnector" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>QGXysu6HvegWAA99vBPKpCbbPPVS5wpZd/86oorTtv4=</dsig:DigestValue>
+        <dsig:DigestValue>FOw/6151v/ZNAHfTCsFJD7WWau1Nb6rGo6Z5/1OnnfE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SctCADClient.exe" size="167872">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SctCADClient.exe" size="161728">
       <assemblyIdentity name="SctCADClient" version="1.0.1221.1" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>KNGoF2dNeVhw2EtRyFdoZGwMuhhovlQHNy6ypPcx+qw=</dsig:DigestValue>
+        <dsig:DigestValue>zqL5U25PNoLgi4wTbPKkvq5tv2AKFkvfqETr9ikpVxU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SctClientLib.dll" size="125952">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SctClientLib.dll" size="114176">
       <assemblyIdentity name="SctClientLib" version="1.0.0.2" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>xszc/oXQ0GBs9/T0vyLG5Q6qbHvvjusCf5CcADi7tKQ=</dsig:DigestValue>
+        <dsig:DigestValue>5BTZeZa0jfJuSVJ5tsDQIB1zSX38dYPDBcLBPUh93sU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SctLib.dll" size="116224">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SctLib.dll" size="99328">
       <assemblyIdentity name="SctLib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>hyEKGrA3QKeN3hoOKrX67WA7Vmrg202QOKqazR8DeFo=</dsig:DigestValue>
+        <dsig:DigestValue>c71CtTKMvR245rAf7u/QL+UO2x+Ak/KtFFg6MGZeLMI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SctLoginClient.dll" size="17408">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SctLoginClient.dll" size="15872">
       <assemblyIdentity name="SctLoginClient" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>icF2fplAMU248pdw8qC+uggB7FQZJeeSjDJiI4L9Kz8=</dsig:DigestValue>
+        <dsig:DigestValue>/w9llbllam3RVTBSdIaVwITbQwjhk8LnuRO8dGWgZjA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SctRestApiModelsClient.dll" size="53248">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SctRestApiModelsClient.dll" size="50176">
       <assemblyIdentity name="SctRestApiModelsClient" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>fWsS71bwvz9pL69l96fki1evWyN201NelquVgYHvjus=</dsig:DigestValue>
+        <dsig:DigestValue>EnWl6QYJFpymhNAmv6OjO4jRTviWvYzqyFd0jH95jLU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SctRestClient.exe" size="28160">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SctRestClient.exe" size="25088">
       <assemblyIdentity name="SctRestClient" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>MOXejmcRUJS7/R4RTonwxkdl7fGWhmHFIPMjguS9530=</dsig:DigestValue>
+        <dsig:DigestValue>dV4+SZ/Tr6kQEKPOoFBy8Z8uoKqF1EWz+6gqJmFJOjE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -432,4 +432,4 @@
       <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
     </application>
   </compatibility>
-<publisherIdentity name="CN=SCHWINDT\EV6App" issuerKeyHash="ae41715c7e7a9715de058a4edeb8e73006fd98e2" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>VaEgf/JyEYlWfnhmqGQXiwDc2FtJ2wDhzJo0+KlhYEY=</DigestValue></Reference></SignedInfo><SignatureValue>Ut6x58v0DvhnNtUWkBDjr6GqTCMXU3HNGkDGy+TPh7vrgi0IDXYkFdCjC9YfQqyvUsFppFqo2zt3mKhl7O7igtJ00lNBni2nG+L5X0buZNlsfcilatjj9RRH6qAEAO+ksZS9+eCU+hI5yAfMQqVbtofuwkMezKx1cW2oSSSw7OI=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>orScDpPjDJSsT8eF5FIwRSX6RSlQp4SxWA8biZEyRwuq9ATV6gHO1e4fr8PvXVRtVn//jSeZomNnZIvc1I43Yw8B8PBRy+FSrwMbN4a1qSkk6lbaNFRpHngjWj5DCL/3rWzUvEQTD/DSVoDEHMtruB/mqEd2OyWenyKvN+J2aUU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="466061a9f8349acce100db495bd8dc008b1764a866787e56891172f27f20a155" Description="" Url=""><as:assemblyIdentity name="SctCADClient.exe" version="1.0.1229.4" publicKeyToken="19ebdd33ed317637" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=SCHWINDT\EV6App</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>oqFO0lgpgVvWVCnsjfWzlUgUnXl7FYau1nYnB3lBQ24=</DigestValue></Reference></SignedInfo><SignatureValue>nufULxnXytJzb3gjSih47OA3UtCvvTqTat7be1CyMMNJPJx62NSEb7FDyAQObdV403l7nbCfarGxcyLIGXR0kY1f3vhblg5/A0/IUc0iSTTXEF4pg1l56/yIyWaj+l0P9p1VTaT/ydtJxSIgER6BdysT0LihtGxlpDrto78Wbjs=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>orScDpPjDJSsT8eF5FIwRSX6RSlQp4SxWA8biZEyRwuq9ATV6gHO1e4fr8PvXVRtVn//jSeZomNnZIvc1I43Yw8B8PBRy+FSrwMbN4a1qSkk6lbaNFRpHngjWj5DCL/3rWzUvEQTD/DSVoDEHMtruB/mqEd2OyWenyKvN+J2aUU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB1TCCAT6gAwIBAgIQRhKUVaRq5LhP+xpiQgIk5TANBgkqhkiG9w0BAQsFADApMScwJQYDVQQDHh4AUwBDAEgAVwBJAE4ARABUAFwARQBWADYAQQBwAHAwHhcNMjExMjE2MDgxNjMwWhcNMjIxMjE2MTQxNjMwWjApMScwJQYDVQQDHh4AUwBDAEgAVwBJAE4ARABUAFwARQBWADYAQQBwAHAwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAKK0nA6T4wyUrE/HheRSMEUl+kUpUKeEsVgPG4mRMkcLqvQE1eoBztXuH6/D711UbVZ//40nmaJjZ2SL3NSON2MPAfDwUcvhUq8DGzeGtakpJOpW2jRUaR54I1o+Qwi/961s1LxEEw/w0laAxBzLa7gf5qhHdjslnp8irzfidmlFAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAJR9Ob6657Q5fkoTTgefLrUZjwdqMoaNFK10T8yvi+rHTOyRkjmJ9WKg2VAHk3GVh4cfxiyf80kduSWXjcIPez8wYZdtDDTAHWV49HQeFphoPNs4cVeAvNPvtjAlf4YxrapvD0fdhILS8t/wL0ehgQ1h1OPdEiovU8LMtWHdQCU0=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
+<publisherIdentity name="CN=SCHWINDT\EV6App" issuerKeyHash="ae41715c7e7a9715de058a4edeb8e73006fd98e2" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>il50DPeQwsR2m6QfotO+Rh6xmW1TAgViXpmzx1Z8rMM=</DigestValue></Reference></SignedInfo><SignatureValue>k3eyJ52gwvTbYTryadrDjDQ0y1ncJ6fIJsxH/xmuaq93m22zSV0n5Rz2qKXs4c3jgV1obJEGirA2xtj/Vijs3lMwD4FMlUmgWKmO1ISn+doJh+F4jhn8q/R1JmCJcE0auTnhvVcsaZ70XiOaziM/Z32RkKX74OovV+tt8XbcT1c=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>orScDpPjDJSsT8eF5FIwRSX6RSlQp4SxWA8biZEyRwuq9ATV6gHO1e4fr8PvXVRtVn//jSeZomNnZIvc1I43Yw8B8PBRy+FSrwMbN4a1qSkk6lbaNFRpHngjWj5DCL/3rWzUvEQTD/DSVoDEHMtruB/mqEd2OyWenyKvN+J2aUU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="c3ac7c56c7b3995e620502536d99b11e46bed3a21fa49b76c4c290f70c745e8a" Description="" Url=""><as:assemblyIdentity name="SctCADClient.exe" version="1.0.1229.4" publicKeyToken="19ebdd33ed317637" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=SCHWINDT\EV6App</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>H0VN3royNTRKNd9+hkfdpf7oNHrj41PKsbU6QS6WcAM=</DigestValue></Reference></SignedInfo><SignatureValue>lzsoA58kRC2mTqJMUpTgToV3lWzcwPARt0gRulo9LqULBPJQ139ttrSOjuDqFj+XKZdVeN0lwfiM9b0peagNUYXHEW59lcC4VoNj5pQO7TpYva3CB9FnsiP2haBy/8QUZVSAKCZedNNTFFBpHYY1MvMuft9qpaK/TFe6WVgmpqU=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>orScDpPjDJSsT8eF5FIwRSX6RSlQp4SxWA8biZEyRwuq9ATV6gHO1e4fr8PvXVRtVn//jSeZomNnZIvc1I43Yw8B8PBRy+FSrwMbN4a1qSkk6lbaNFRpHngjWj5DCL/3rWzUvEQTD/DSVoDEHMtruB/mqEd2OyWenyKvN+J2aUU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB1TCCAT6gAwIBAgIQRhKUVaRq5LhP+xpiQgIk5TANBgkqhkiG9w0BAQsFADApMScwJQYDVQQDHh4AUwBDAEgAVwBJAE4ARABUAFwARQBWADYAQQBwAHAwHhcNMjExMjE2MDgxNjMwWhcNMjIxMjE2MTQxNjMwWjApMScwJQYDVQQDHh4AUwBDAEgAVwBJAE4ARABUAFwARQBWADYAQQBwAHAwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAKK0nA6T4wyUrE/HheRSMEUl+kUpUKeEsVgPG4mRMkcLqvQE1eoBztXuH6/D711UbVZ//40nmaJjZ2SL3NSON2MPAfDwUcvhUq8DGzeGtakpJOpW2jRUaR54I1o+Qwi/961s1LxEEw/w0laAxBzLa7gf5qhHdjslnp8irzfidmlFAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAJR9Ob6657Q5fkoTTgefLrUZjwdqMoaNFK10T8yvi+rHTOyRkjmJ9WKg2VAHk3GVh4cfxiyf80kduSWXjcIPez8wYZdtDDTAHWV49HQeFphoPNs4cVeAvNPvtjAlf4YxrapvD0fdhILS8t/wL0ehgQ1h1OPdEiovU8LMtWHdQCU0=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
